@@ -11,7 +11,7 @@ buttonA.addEventListener('click',function (){
      let a = parseFloat(input1.value);
     let b = parseFloat(input2.value);
 
-    if(!isNaN(a) || !isNaN(b) ){
+    if(!isNaN(a) && !isNaN(b) ){
         
         let result = sum(a , b);
       para.innerHTML= "your result is  : "+result;
@@ -34,8 +34,21 @@ function sum(a , b){
 buttonM.addEventListener('click',function (){
     let a = parseFloat(input1.value);
     let b = parseFloat(input2.value);
-    let result = multiplying(a , b);
+
+    if(!isNaN(a) && !isNaN(b) ){
+        
+        let result = multiplying(a , b);
     para.innerHTML= "your result is  : "+result;
+      
+    }
+    else {
+      alert("it looks like you have inserted the wrong data type");
+      para.innerHTML="you must have to insert numbers"
+
+    }
+
+
+    
     
 });
 function multiplying(a , b){
