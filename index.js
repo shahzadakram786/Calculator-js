@@ -36,7 +36,7 @@ buttonM.addEventListener('click',function (){
     let b = parseFloat(input2.value);
 
     if(!isNaN(a) && !isNaN(b) ){
-        
+
         let result = multiplying(a , b);
     para.innerHTML= "your result is  : "+result;
       
@@ -82,3 +82,20 @@ buttonD.addEventListener('click',function (){
 function Dividing(a , b){
     return a / b;
 };
+
+
+
+
+
+
+
+  let inputmain =  document.getElementById("inputmain");
+  let  =  document.getElementById(" ");
+  let  =  document.getElementById(" ");
+  let  =  document.getElementById(" ");
+  let  =  document.getElementById(" ");
+  let  =  document.getElementById(" ");
+  let  =  document.getElementById(" ");
+  let  =  document.getElementById(" ");
+  let  =  document.getElementById(" ");
+    
