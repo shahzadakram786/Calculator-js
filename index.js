@@ -98,10 +98,14 @@ function Dividing(a , b){
   let  =  document.getElementById(" ");
   let  =  document.getElementById(" ");
   let  =  document.getElementById(" ");
+
+
+
+
+
+
+  
     
-
-
-
 //  let container = document.querySelector("#full-Calc");
 
 // for( let i = 0; i <= 2 ; i++){
