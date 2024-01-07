@@ -99,3 +99,29 @@ function Dividing(a , b){
   let  =  document.getElementById(" ");
   let  =  document.getElementById(" ");
     
+
+
+
+//  let container = document.querySelector("#full-Calc");
+
+// for( let i = 0; i <= 2 ; i++){
+//     container.innerHTML +=  container.innerHTML
+
+// };
+
+
+
+
+
+    // task 3 table of 21 
+let loop = document.getElementById("loop");
+let mmm  = document.getElementById("mmm");
+
+   for(let i = 1 ; i <= 20 ; i++){
+    // --Working
+    // console.log('21 *', i,'=', i*21)
+    // not working
+    mmm.innerHTML += '21 *', i,'=', i*21;
+
+
+}
