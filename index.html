@@ -39,14 +39,14 @@
         <div id="full-Calc" style="background-color: rgb(144, 35, 35);margin:150px; width: 60%; border-radius: 30px; ; display: flex; flex-direction: column; padding: 20px; box-shadow:inset 2px 2px 44px black; ">
             
             <h1 style="text-align: center;color: aliceblue;">Calculator</h1>
-            <input type="text" name="" id="inputmain" placeholder="0" style="padding: 20px;font-size: 25px;  border-radius: 20px; border: none; box-shadow:inset 4px 2px 19px black ;">
+            <p id="display" style="padding: 20px;font-size: 25px;background-color: white;  border-radius: 20px; border: none; box-shadow:inset 4px 2px 19px black ;">0</p>
             <hr style="width: 100%; box-shadow: 3px 3px 9px black;"><br>
 
             <div class="buttons" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; padding: 10px;" >
-               <button onclick = "appendNumber(C)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >C</button>
-               <button onclick = "appendNumber(Del)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >Del</button>
+               <button onclick = "clearDisplay()" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >C</button>
+               <button onclick = "clearLastElement()" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >Del</button>
                <button onclick = "appendNumber()" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" ></button>
-               <button onclick = "appendNumber('+')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >+</button>
+               <button onclick = "appendToDisplay('+')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >+</button>
                <button onclick = "appendNumber(7)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >7</button>
                <button onclick = "appendNumber(8)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >8</button>
                <button onclick = "appendNumber(9)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >9</button>
@@ -62,7 +62,7 @@
                <button onclick = "appendNumber(0)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >00</button>
                <button onclick = "appendNumber(0)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >0</button>
                <button onclick = "appendNumber('.')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >.</button>
-               <button onclick = "appendNumber('=')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >=</button>
+               <button onclick = "calculateResult()" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >=</button>
             </div>
 
 
