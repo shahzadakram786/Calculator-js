@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Making Calculator</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body style="margin: 0;padding: 0;">
 
@@ -34,31 +35,32 @@
 
         <div id="full-Calc" style="background-color: rgb(144, 35, 35);margin:150px; width: 60%; border-radius: 30px; ; display: flex; flex-direction: column; padding: 20px; box-shadow:inset 2px 2px 44px black; ">
             
-            <h1 style="text-align: center;color: aliceblue;">Calculator</h1>
-            <div id="display" style="padding: 20px;font-size: 25px;background-color: white;  border-radius: 20px; border: none; box-shadow:inset 4px 2px 19px black ;height: 2em;"></div>
+            <h1>Calculator</h1>
+            <div id="display" ></div>
+            <br>
             <hr style="width: 100%; box-shadow: 3px 3px 9px black;"><br>
 
             <div class="buttons" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; padding: 10px;" >
-               <button class="butn" onclick = "clearDisplay()" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >C</button>
-               <button class="butn" onclick = "clearLastElement()" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >Del</button>
-               <button class="butn" onclick = "appendToDisplay('%')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >%</button>
-               <button class="butn" onclick = "appendToDisplay('+')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >+</button>
-               <button class="butn" onclick = "appendToDisplay(7)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >7</button>
-               <button class="butn" onclick = "appendToDisplay(8)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >8</button>
-               <button class="butn" onclick = "appendToDisplay(9)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >9</button>
-               <button class="butn" onclick = "appendToDisplay('-')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >-</button>
-               <button class="butn" onclick = "appendToDisplay(4)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >4</button>
-               <button class="butn" onclick = "appendToDisplay(5)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >5</button>
-               <button class="butn" onclick = "appendToDisplay(6)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >6</button>
-               <button class="butn" onclick = "appendToDisplay('*')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >*</button>
-               <button class="butn" onclick = "appendToDisplay(1)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >1</button>
-               <button class="butn" onclick = "appendToDisplay(2)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >2</button>
-               <button class="butn" onclick = "appendToDisplay(3)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >3</button>
-               <button class="butn" onclick = "appendToDisplay('/')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >/</button>
-               <button class="butn" onclick = "appendToDisplay(0)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >00</button>
-               <button class="butn" onclick = "appendToDisplay(0)" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >0</button>
-               <button class="butn" onclick = "appendToDisplay('.')" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >.</button>
-               <button class="butn" onclick = "calculateResult()" style="padding: 18px; border-radius: 15px; border: none; margin: 2px; box-shadow: inset 4px 2px 16px ;" >=</button>
+               <button class="butn" onclick = "clearDisplay()"       >C</button>
+               <button class="butn" onclick = "clearLastElement()"   >Del</button>
+               <button class="butn" onclick = "appendToDisplay('%')" >%</button>
+               <button class="butn" onclick = "appendToDisplay('+')" >+</button>
+               <button class="butn" onclick = "appendToDisplay(7)"   >7</button>
+               <button class="butn" onclick = "appendToDisplay(8)"   >8</button>
+               <button class="butn" onclick = "appendToDisplay(9)"   >9</button>
+               <button class="butn" onclick = "appendToDisplay('-')" >-</button>
+               <button class="butn" onclick = "appendToDisplay(4)"   >4</button>
+               <button class="butn" onclick = "appendToDisplay(5)"   >5</button>
+               <button class="butn" onclick = "appendToDisplay(6)"   >6</button>
+               <button class="butn" onclick = "appendToDisplay('*')" >*</button>
+               <button class="butn" onclick = "appendToDisplay(1)"   >1</button>
+               <button class="butn" onclick = "appendToDisplay(2)"   >2</button>
+               <button class="butn" onclick = "appendToDisplay(3)"   >3</button>
+               <button class="butn" onclick = "appendToDisplay('/')" >/</button>
+               <button class="butn" onclick = "appendToDisplay(0)"   >00</button>
+               <button class="butn" onclick = "appendToDisplay(0)"   >0</button>
+               <button class="butn" onclick = "appendToDisplay('.')" >.</button>
+               <button class="butn" onclick = "calculateResult()"    >=</button>
             </div>
         </div>
   

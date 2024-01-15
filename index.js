@@ -112,7 +112,7 @@ function appendToDisplay(value) {
 output = false;
 
 
-// here we mentioned the updateDisplay() to display the values of 
+// here i mentioned the updateDisplay() to display the values of 
 // appendToDisplays
 updateDisplay();
 }
