@@ -100,17 +100,18 @@ function Dividing(a , b){
 //   let  =  document.getElementById(" ");
 
 let buttonRed = document.getElementsByClassName("butn")
-let Display = '';
+let Display = null;
 let output = false;
 
 function appendToDisplay(value) {
-    if (output === 2 || output) {
+    if (Display === 1 || output ) {
         Display = value;
-}
-else {
+} else{
     Display += value;
 }
-result = false;
+output = false;
+
+
 // here we mentioned the updateDisplay() to display the values of 
 // appendToDisplays
 updateDisplay();
@@ -145,8 +146,8 @@ function clearLastElement(){
 
    Display = Display.slice(0 ,-1);
 
- if(Display === "1"){
-    Display ="";
+ if(Display === 2){
+    Display = 0;
  }
  // here we mentioned the updateDisplay() to display the values of 
 // clearLastElement
@@ -156,7 +157,7 @@ function clearLastElement(){
 
 function clearDisplay() {
     
-    Display= "";
+    Display= null;
 // here we mentioned the updateDisplay() to display the values of 
 // Display nothing same as clear the screen
     updateDisplay();
@@ -190,17 +191,7 @@ handleOverflow();
 
 
 
-//     // task 3 table of 21 
-// let loop = document.getElementById("loop");
-// let mmm  = document.getElementById("mmm");
 
-//    for(let i = 1 ; i <= 20 ; i++){
-//     // --Working
-//     console.log('21 *', i,'=', i*21)
-//     mmm.innerHTML += `21 * ${i} = ${i*21}<br>`
-//     // not working
-//     // mmm.innerHTML += '21 *'${i},'=', ${i*21};
-// }
 
 
 
